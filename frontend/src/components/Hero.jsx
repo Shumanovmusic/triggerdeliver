@@ -34,11 +34,13 @@ const Hero = ({ onOpenLeadForm }) => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                onClick={onOpenLeadForm}
+                asChild
                 className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 py-6 text-lg group"
               >
-                Start free trial
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <a href="https://app.triggerdeliver.com/login">
+                  Start free trial
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               <Button
                 onClick={onOpenLeadForm}

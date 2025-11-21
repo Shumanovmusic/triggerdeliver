@@ -57,10 +57,10 @@ const Header = ({ onOpenLeadForm }) => {
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center gap-4">
               <Button
-                onClick={onOpenLeadForm}
+                asChild
                 className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6"
               >
-                Start free trial
+                <a href="https://app.triggerdeliver.com/login">Start free trial</a>
               </Button>
             </div>
 
@@ -96,10 +96,10 @@ const Header = ({ onOpenLeadForm }) => {
             ))}
             <div className="flex flex-col gap-4 w-full mt-6">
               <Button
-                onClick={onOpenLeadForm}
+                asChild
                 className="bg-blue-600 hover:bg-blue-700 text-white w-full rounded-full"
               >
-                Start free trial
+                <a href="https://app.triggerdeliver.com/login">Start free trial</a>
               </Button>
             </div>
           </nav>

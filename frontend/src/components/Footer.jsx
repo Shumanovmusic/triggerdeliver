@@ -13,11 +13,13 @@ const CTASection = ({ onOpenLeadForm }) => {
           Build intelligent, personalised journeys that scale across every channel with TriggerDeliver.
         </p>
         <Button 
-          onClick={onOpenLeadForm}
+          asChild
           className="bg-white text-blue-600 hover:bg-gray-100 rounded-full px-8 py-6 text-lg group"
         >
-          Start free trial
-          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          <a href="https://app.triggerdeliver.com/login">
+            Start free trial
+            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </a>
         </Button>
       </div>
     </section>
